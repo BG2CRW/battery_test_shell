@@ -13,10 +13,17 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    int loginCall();
     ~MainWindow();
 
 private:
     Ui::MainWindow *ui;
+
+public slots:
+    void receiveLoginData(QString usrName,QString usrType);
+private slots:
+    void on_pushButton_clicked();
 };
+
 
 #endif // MAINWINDOW_H
