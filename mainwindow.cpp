@@ -38,7 +38,7 @@ int MainWindow::loginCall()
         return 2;
 }
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_action_exit_triggered()
 {
     close();
 }

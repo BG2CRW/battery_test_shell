@@ -22,7 +22,7 @@ private:
 public slots:
     void receiveLoginData(QString usrName,QString usrType);
 private slots:
-    void on_pushButton_clicked();
+    void on_action_exit_triggered();
 };
 
 
