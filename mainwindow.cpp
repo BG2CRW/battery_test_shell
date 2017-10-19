@@ -2,7 +2,7 @@
 #include "ui_mainwindow.h"
 #include "logindialog.h"
 
-
+#include <Qprocess>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -41,4 +41,13 @@ int MainWindow::loginCall()
 void MainWindow::on_action_exit_triggered()
 {
     close();
+}
+
+void MainWindow::on_action_logout_triggered()
+{
+    //方法1：
+    qApp->quit();
+    QProcess::startDetached(qApp->applicationFilePath(), QStringList());
+    //方法2：
+    //qApp->exit(888);
 }

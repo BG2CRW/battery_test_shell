@@ -8,7 +8,7 @@ LoginDialog::LoginDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     QPixmap image; //定义一张图片
-    image.load("..\\battery_test_shell\\source\\loginlogo.jpg");//加载
+    image.load(":/myimages/resource/loginlogo.jpg");//加载
     ui->showlogo->clear();//清空
     ui->showlogo->setPixmap(image);//加载到Label标签
     ui->showlogo->setScaledContents(true);

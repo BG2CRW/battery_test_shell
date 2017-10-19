@@ -73,7 +73,7 @@
      <x>0</x>
      <y>0</y>
      <width>777</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_F">
@@ -88,15 +88,6 @@
      <addaction name="action_LMI_120"/>
      <addaction name="action_testPlatform"/>
     </widget>
-    <widget class="QMenu" name="menu_4">
-     <property name="title">
-      <string>载入信息</string>
-     </property>
-     <addaction name="action_sizeInf"/>
-     <addaction name="action_silkScreenInf"/>
-     <addaction name="action_thresholdInf"/>
-     <addaction name="action_NNmodelInf"/>
-    </widget>
     <widget class="QMenu" name="menu_5">
      <property name="title">
       <string>数据统计</string>
@@ -106,7 +97,7 @@
      <addaction name="action_upload"/>
     </widget>
     <addaction name="menu_2"/>
-    <addaction name="menu_4"/>
+    <addaction name="action_loadData"/>
     <addaction name="menu_5"/>
    </widget>
    <widget class="QMenu" name="menu">
@@ -133,7 +124,6 @@
     <property name="title">
      <string>系统设置</string>
     </property>
-    <addaction name="action_skinSet"/>
     <addaction name="action_usrSet"/>
     <addaction name="action_logout"/>
     <addaction name="action_exit"/>
@@ -164,26 +154,6 @@
   <action name="action_testPlatform">
    <property name="text">
     <string>测试台</string>
-   </property>
-  </action>
-  <action name="action_sizeInf">
-   <property name="text">
-    <string>尺寸信息</string>
-   </property>
-  </action>
-  <action name="action_silkScreenInf">
-   <property name="text">
-    <string>丝印信息</string>
-   </property>
-  </action>
-  <action name="action_thresholdInf">
-   <property name="text">
-    <string>缺陷阈值</string>
-   </property>
-  </action>
-  <action name="action_NNmodelInf">
-   <property name="text">
-    <string>神经网络模型</string>
    </property>
   </action>
   <action name="action_resultStats">
@@ -246,11 +216,6 @@
     <string>划痕检测</string>
    </property>
   </action>
-  <action name="action_skinSet">
-   <property name="text">
-    <string>皮肤设置</string>
-   </property>
-  </action>
   <action name="action_usrSet">
    <property name="text">
     <string>用户设置</string>
@@ -264,6 +229,11 @@
   <action name="action_exit">
    <property name="text">
     <string>退出</string>
+   </property>
+  </action>
+  <action name="action_loadData">
+   <property name="text">
+    <string>载入信息</string>
    </property>
   </action>
  </widget>

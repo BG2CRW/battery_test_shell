@@ -23,6 +23,7 @@ public slots:
     void receiveLoginData(QString usrName,QString usrType);
 private slots:
     void on_action_exit_triggered();
+    void on_action_logout_triggered();
 };
 
 

@@ -4,15 +4,18 @@
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
+    int logout_number = 0;
 
-    //while(1)
-    //{
+    do{
+        QApplication a(argc, argv);
+        MainWindow w;
         if(w.loginCall()==1)
         {
             w.show();
-            return a.exec();
+            logout_number = a.exec();
         }
-    //}
+    }
+    while(logout_number == 888);
+
+    return logout_number;
 }

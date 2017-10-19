@@ -33,6 +33,7 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui \
     logindialog.ui
 
-RESOURCES +=
+RESOURCES += \
+    myicons.qrc
 
 RC_ICONS = myico.ico
