@@ -1,8 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "logindialog.h"
-
-#include <Qprocess>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -20,6 +17,10 @@ void MainWindow::receiveLoginData(QString usrName,QString usrType)
 {
     ui->label_3->setText(usrName);
     ui->label_4->setText(usrType);
+    if(usrType == tr("操作员"))
+    {
+        ui->action_usrSet->setEnabled(false);
+    }
 }
 
 int MainWindow::loginCall()
@@ -38,16 +39,23 @@ int MainWindow::loginCall()
         return 2;
 }
 
-void MainWindow::on_action_exit_triggered()
+void MainWindow::on_action_exit_triggered()//退出功能
 {
     close();
 }
 
-void MainWindow::on_action_logout_triggered()
+void MainWindow::on_action_logout_triggered()//注销功能
 {
     //方法1：
     qApp->quit();
     QProcess::startDetached(qApp->applicationFilePath(), QStringList());
     //方法2：
     //qApp->exit(888);
+}
+
+void MainWindow::on_action_usrSet_triggered()//用户设置功能
+{
+    Usrset *usrset = new Usrset;
+    usrset->setModal(true);
+    usrset->show();
 }

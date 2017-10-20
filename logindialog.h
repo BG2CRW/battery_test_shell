@@ -2,6 +2,9 @@
 #define LOGINDIALOG_H
 
 #include <QDialog>
+#include <QMessageBox>
+#include "xml.h"
+#include "typechange.h"
 
 namespace Ui {
 class LoginDialog;
@@ -21,6 +24,7 @@ private slots:
 
 private:
     Ui::LoginDialog *ui;
+
 signals:
     void sendLoginData(QString,QString);
 

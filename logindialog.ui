@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>登录</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -62,7 +62,7 @@
     </rect>
    </property>
    <property name="echoMode">
-    <enum>QLineEdit::Normal</enum>
+    <enum>QLineEdit::Password</enum>
    </property>
    <property name="placeholderText">
     <string>请输入密码</string>
@@ -124,11 +124,6 @@
    <item>
     <property name="text">
      <string>管理员</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>超级用户</string>
     </property>
    </item>
   </widget>
